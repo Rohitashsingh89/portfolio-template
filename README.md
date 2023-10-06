@@ -1,8 +1,10 @@
 # Personal Branding Website
-
-![Website Preview](link_to_your_website_preview_image)
-
 This repository contains the source code of this personal branding website. The website showcases your professional profile, projects, skills, and contact information.
+
+Demo url https://templates01.netlify.app/
+## SnapShot
+
+![Rohitash Singh - Personal Branding](https://github.com/Rohitashsingh89/portfolio-template/assets/93479842/e82f33db-cccb-4840-a001-363d44d68e5c)
 
 ## Features
 
