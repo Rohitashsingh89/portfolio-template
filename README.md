@@ -1,10 +1,8 @@
-# portfolio-template
-
-# Rohitash Singh - Personal Branding Website
+# Personal Branding Website
 
 ![Website Preview](link_to_your_website_preview_image)
 
-This repository contains the source code for my personal branding website. The website showcases my professional profile, projects, skills, and contact information.
+This repository contains the source code of this personal branding website. The website showcases your professional profile, projects, skills, and contact information.
 
 ## Features
 
@@ -34,13 +32,6 @@ This repository contains the source code for my personal branding website. The w
 
 2. Open the `index.html` file in your web browser to view the website locally.
 
-## How to Use
-
-- Navigate through the website sections using the navigation menu.
-
-- Explore projects to see details about each project and view project images.
-
-- Contact me using the provided contact form or connect via email and social media links.
 
 ## Contributing
 
@@ -59,7 +50,3 @@ If you find any issues or have suggestions for improvement, feel free to open an
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
----
-
-**Note:** Replace `link_to_your_website_preview_image` in the first section with the URL of an image showing a preview of your website. Additionally, update the clone URL in the "Getting Started" section with the URL of your GitHub repository. Modify the content as needed to fit your website and preferences.
