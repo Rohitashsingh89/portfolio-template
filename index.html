@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohitash Singh - Personal Branding</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333; 
+            color: white;
+            padding: 2rem;
+            text-align: left;
+        }
+
+        .hero-content {
+            max-width: 400px;
+        }
+
+        .hero-img {
+            width: 300px; 
+            height: auto;
+        }
+
+        .contact-button {
+            background-color: #fff; 
+            color: #333; 
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 20px;
+            display: inline-block;
+            border-radius: 5px; 
+        }
+
+        .testimonial {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: url('https://source.unsplash.com/random/800x800') no-repeat right center/cover;
+            color: white;
+            padding: 2rem;
+            text-align: left;
+            height: 400px; 
+        }
+
+        .testimonial-content {
+            max-width: 400px;
+        }
+
+        .testimonial-button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .testimonial-img {
+            width: 300px; 
+            height: auto;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .project-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .project-box img {
+            width: 100%; 
+            max-width: 100%; 
+            height: 200px; 
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+
+        .contact-form button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        
+        .contact-details {
+            padding-bottom: 60px;
+        }
+        
+        header {
+            animation: fadeIn 1s ease-out;
+        }
+
+        nav {
+            animation: slideUp 1s ease-out;
+        }
+
+        .hero-content {
+            animation: slideInLeft 1s ease-out;
+        }
+
+        .hero-img {
+            animation: slideInRight 1s ease-out;
+        }
+
+        .project-box {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .contact-form, .contact-info {
+            animation: slideInRight 1s ease-out;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 0.5rem 0;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            margin-bottom: 10px;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .hero {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: #333; 
+                color: white;
+                padding: 2rem;
+                text-align: center;
+            }
+
+            .hero-content {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .hero-img {
+                width: 100%;
+                max-width: 300px; 
+                height: auto;
+            }
+            .testimonial {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: #333; 
+                color: white;
+                padding: 2rem;
+                text-align: center;
+                height: auto;
+            }
+
+            .testimonial-content {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .testimonial-img {
+                width: 100%;
+                max-width: 300px; 
+                height: auto;
+            }
+
+        }
+        
+        
+        @media (max-width: 768px) {
+            .hero-content {
+                margin-right: 20px;
+                text-align: left;
+            }
+        }
+
+        /* Keyframe animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-50px);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(50px);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Rohitash Singh</h1>
+        <p>Personal Branding Website</p>
+    </header>
+
+    <nav>
+        <a href="#bio">Bio</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Hello,</h1>
+                <h2>I'm Rohitash Singh</h2>
+                <p>
+                    Passionate about personal and professional development. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nullam euismod, purus in posuere feugiat, odio odio aliquam mauris, nec sollicitudin
+                    lectus est ac nulla. Integer et mauris et libero feugiat pretium.
+                </p>
+                <a href="#contact" class="contact-button">Contact Me</a>
+            </div>
+            <img class="hero-img" src="https://source.unsplash.com/random/800x800" alt="Your Image Alt Text">
+        </div>
+
+        
+    
+
+        <div id="bio" class="content">
+            <h2>Bio</h2>
+            <p>
+                Hello, I'm Rohitash Singh, a passionate individual dedicated to personal and professional development.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, purus in posuere feugiat, odio
+                odio aliquam
+                mauris, nec sollicitudin lectus est ac nulla. Integer et mauris et libero feugiat pretium.
+            </p>
+        </div>
+
+        <div id="projects" class="content">
+            <h2>Projects</h2>
+            <div class="project-box">
+                <h3>Project 1: Lorem Ipsum Project</h3>
+                <p>Description of the project goes here.</p>
+                <img src="https://source.unsplash.com/random/800x600" alt="Project 1">
+            </div>
+            <div class="project-box">
+                <h3>Project 2: Dolor Sit Amet Project</h3>
+                <p>Description of the project goes here.</p>
+                <img src="https://source.unsplash.com/random/800x601" alt="Project 2">
+            </div>
+        </div>
+
+        <div id="skills" class="content">
+            <h2>Skills</h2>
+            <div class="skills">
+                <ul>
+                    <li>Web Development</li>
+                    <li>Graphic Design</li>
+                    <li>Project Management</li>
+                    <li>Communication Skills</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="testimonial">
+            <img class="testimonial-img" src="https://source.unsplash.com/random/800x800" alt="Your Image Alt Text">
+            <div class="testimonial-content">
+                <h1>Hello,</h1>
+                <h2>I'm Rohitash Singh</h2>
+                <p>
+                    Passionate about personal and professional development. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nullam euismod, purus in posuere feugiat, odio odio aliquam mauris, nec sollicitudin
+                    lectus est ac nulla. Integer et mauris et libero feugiat pretium.
+                </p>
+                <a href="#contact" class="testimonial-button">Contact Me</a>
+            </div>
+        </div>
+
+        <div id="contact" class="content">
+            <h2>Contact Me</h2>
+            <div class="contact-form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button>Submit</button>
+            </div>
+        </div>
+
+        <div id="contact" class="content contact-details">
+            <h2>Contact Details</h2>
+            <p>Email: brohitashsingh89@gmail.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+            <p>Connect with me on social media:</p>
+            <p>
+                <a href="https://twitter.com/rohitashsingh89" target="_blank">Twitter</a> |
+                <a href="https://www.linkedin.com/in/rohitash-singh-411337271/" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/rohitashsingh89" target="_blank">GitHub</a>
+            </p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Rohitash Singh. All rights reserved.</p>
+    </div>
+
+</body>
+
+</html>
